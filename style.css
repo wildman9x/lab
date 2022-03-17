@@ -54,7 +54,7 @@ body {
 .topnav {
   float: right;
 }
-/* change size of the navbar elements */
+/* change size of the navbar elements and put the navbar to the left */
 .topnav a {
   float: left;
   display: block;
@@ -79,10 +79,12 @@ img {
   height: 128px;
 }
 
-/*center the div*/
-center {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+
+/*put everything in the center of the page */
+.center {
+  text-align: center;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
 }
