@@ -1,0 +1,34 @@
+.list{
+    background-color: #fffdc1;
+    border-radius: 50px;
+    padding: 10px;
+    margin: 10px;
+    border: 2px solid #8d7c7c;
+}
+p {
+    text-align: center;
+}
+
+/*align everything in the ordered list in the center*/
+ol{
+    text-align: center;
+    list-style-position: inside;
+}
+
+li {
+    text-align: center;
+    background-color: #147008;
+    border-radius: 20em;
+    padding: 5%;
+    margin: 10px;
+    border: 2px solid #8d7c7c;
+    width: 30%;
+    height: 40%;
+    color: rgb(0, 0, 0);
+    mix-blend-mode: difference;
+}
+
+li:hover{
+    background-color: #fcf96e;
+    color: #147008;
+}
