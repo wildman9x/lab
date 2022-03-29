@@ -79,7 +79,6 @@ main > article img {
     margin-bottom: auto;
     margin-top: auto;
     object-fit: contain;
-
 }
 p {
     width: 90%;
@@ -92,6 +91,7 @@ article {
     display: inline-block;
     margin-right: 0.05em;
     margin-left: 0.05em;
+    float: left;
 }
 
 article img + p:first-letter {
@@ -109,6 +109,7 @@ article img + p:first-letter {
     text-transform: uppercase;
 }
 footer {
+    clear:both;
     margin: 0;
     padding: 10px 0 10px 0;
     text-align: center;}
