@@ -1,0 +1,34 @@
+/*Nav bar with centered items, each item is a button, body background #cccccc, navbar background #444444, text color #fff*/
+.topnav {
+    background-color: #333;
+    overflow: hidden;
+
+}
+.topnav a {
+    float: left;
+    width: auto;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+.topnav a:hover {
+    background-color: #ddd;
+    color: black;
+}
+.topnav a.active {
+    background-color: #4CAF50;
+    color: white;
+}
+
+
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1em;
+    line-height: 1.42857143;
+    color: #333;
+    background-color: #cccccc;
+}
