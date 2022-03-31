@@ -4,6 +4,27 @@
     <script language="JavaScript" type="text/javascript">
         var x = "John";
     </script>
+    <script language="JavaScript" type="text/javascript">
+        //if the "go somewhere" button is clicked, then the it is redirected to google.com
+        function goSomewhere() {
+            window.location.href = "http://www.google.com";
+        }
+    </script>
+    <script language="JavaScript" type="text/javascript">
+        //function sum that display the sum of two numbers in each input field in an alert
+        function sum() {
+            var x = eval(document.getElementById("num1").value);
+            var y = eval(document.getElementById("num2").value);
+            var z = +x +y;
+            alert(z);
+        }
+        function dokeypress(e) {
+            e.style = "background-color: #346332";
+        }
+        function dokeyclick(e) {
+            e.style = "background-color: #fff";
+        }
+    </script>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -87,8 +108,8 @@
                     }
                 </script>
                 <!--Add lamie.jpg with 100% width auto height-->
-                
-                <a href="#" class="btn btn-primary">Go somewhere</a>
+                <!--Apply function goSomewhere when the button is clicked-->
+                <button type="button" class="btn btn-primary" onclick="goSomewhere()">Go somewhere</button>
             </div>
             </div>
             <div class="card">
@@ -103,6 +124,19 @@
                 <h5 class="card-title">Article 3</h5>
                 <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
                 <a href="#" class="btn btn-primary">Go somewhere</a>
+                <!--Forms that let the user enter a number into each and a button when clicked display the sum of the two numbers-->
+                <form>
+                    <div class="form-group">
+                    <label for="num1st">First number</label>
+                    <input type="number" class="form-control" id="num1" onkeypress="dokeypress(this)" placeholder="Enter first number">
+                    </div>
+                    <div class="form-group">
+                    <label for="num2nd">Second number</label>
+                    <input type="number" class="form-control" id="num2" onmouseover="dokeypress(this)" onmouseout="dokeyclick(this)" placeholder="Enter second number">
+                    </div>
+                    <button type="button" class="btn btn-primary" onclick="sum()">Sum</button>
+
+                </form>
             </div>
             </div>
         </div>
