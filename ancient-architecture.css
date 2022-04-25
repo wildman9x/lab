@@ -1,0 +1,124 @@
+/*Based on the file ancient-architecture.html*/
+/*all nav items are on 1 line and placed in the center*/
+/*import roboto font*/
+/*import font awesome*/
+
+body{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    line-height: 1.42857143;
+    color: #333;
+    background-color: #e2d7aa;
+}
+nav {
+    list-style-type: none;
+    margin: auto;
+    padding: 0;
+    width: 80%;
+}
+ul {
+    list-style-type: none;
+    margin: auto;
+    padding: 1em;
+    width: 80%;
+    margin-top: 2em;
+}
+li {
+    display: inline;
+    margin: 1em;
+
+}
+a:hover
+{
+    background-color: #fff;
+}
+li a {
+    color: rgb(0, 0, 0);
+    padding: 0.8em;
+    margin-top: 1em;
+    font-size: 2em;
+    text-decoration: none;
+}
+
+/*center h1*/
+h1 {
+    font-size: 2em;
+    font-weight: bold;
+    text-align: center;
+    font-size: 60px;
+    font-family:'Indie Flower',cursive;
+    letter-spacing: 5px;
+    text-align: center;
+    margin-top: 65px;
+}
+
+/*center the img-container class*/
+.img-container {
+    margin: auto;
+    width: 80%;
+    height: 80%;
+}
+
+.img-container img {
+    width: 100%;
+    height: auto;
+}
+
+/*divide the main into 3 columns, each article takes 1 column*/
+main {
+    margin-top: auto;
+    margin-left: auto;
+    width: 80%;
+    margin-right: auto;
+}
+
+/*crop img to 16:9 ratio*/
+main > article img {
+    width: 90%;
+    height: auto;
+    margin-bottom: auto;
+    margin-top: auto;
+    object-fit: contain;
+}
+p {
+    width: 90%;
+    text-align: justify;
+    margin-bottom: 20px;
+    font-size: 14px;
+}
+article {
+    width: 33%;
+    display: inline-block;
+    margin-right: 0.05em;
+    margin-left: 0.05em;
+    float: left;
+}
+
+article img + p:first-letter {
+    font-family:
+    EucrosiaUPC sans-serif;
+    text-transform: uppercase;
+    font-size: 40px;
+}
+    .readmore a, .comments a {
+    background:
+    url(images/bg2.jpg);
+    color: #ffffff;
+    padding: 10px;
+    margin-top: 10px;
+    text-transform: uppercase;
+}
+footer {
+    clear:both;
+    margin: 0;
+    padding: 10px 0 10px 0;
+    text-align: center;}
+    article p:last-of-type
+    span:first-of-type a::before {
+    content:
+    url("images/comment.png");
+    position: relative;
+    padding: 10px;
+    right: 5px;
+    top: 7px;
+}

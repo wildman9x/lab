@@ -1,0 +1,148 @@
+<html>
+<head>
+    <!--script that assign "John" into the variable x-->
+    <script language="JavaScript" type="text/javascript">
+        var x = "John";
+    </script>
+    <script language="JavaScript" type="text/javascript">
+        //if the "go somewhere" button is clicked, then the it is redirected to google.com
+        function goSomewhere() {
+            window.location.href = "http://www.google.com";
+        }
+    </script>
+    <script language="JavaScript" type="text/javascript">
+        //function sum that display the sum of two numbers in each input field in an alert
+        function sum() {
+            var x = eval(document.getElementById("num1").value);
+            var y = eval(document.getElementById("num2").value);
+            var z = +x +y;
+            alert(z);
+        }
+        function dokeypress(e) {
+            e.style = "background-color: #346332";
+        }
+        function dokeyclick(e) {
+            e.style = "background-color: #fff";
+        }
+    </script>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap Lab</title>
+<!--Import bootstrap-->
+<!-- CSS only -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" typle = "text/css" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<link href="bootstrapLab.css" rel="stylesheet" type="text/css" />
+<!-- JavaScript Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+<!--Import jQuery before bootstrap.js-->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<!--Import Google Icon Font-->
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+<body>
+<!--Create a navbar with Home, About, contact, login on the right side of the page, the navbar is fixed to the screen-->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <a class="navbar-brand" href="#">Navbar</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mx-auto">
+        <li class="nav-item active">
+            <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="#">About</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="#">Contact</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="#">Login</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="#">Login</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="#">Login</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="#">Login</a>
+        </li>
+        </ul>
+        <!--Search button and popup screen when clicked-->
+        
+        
+    </div>
+</nav>
+
+
+  <!--Make a menu with 3 links on the left of the screen, Write 3 articles, each article has a heading with the text on column 1 and picture on column 9-->
+    <div class="container">
+        <div class="row">
+        <div class="col-md-3">
+            <div class="list-group">
+            <a href="#" class="list-group-item list-group-item-action active">
+                Column 1
+            </a>
+            <a href="#" class="list-group-item list-group-item-action">Article 1</a>
+            <a href="#" class="list-group-item list-group-item-action">Article 2</a>
+            <a href="#" class="list-group-item list-group-item-action">Article 3</a>
+            </div>
+        </div>
+        <div class="col-md-9">
+            <div class="card">
+            <div class="card-body">
+                <!--Assign the value "John" into the variable x and Display the value x of javascript in the heading-->
+                <h5 class="card-title">Hello, <script>document.write(x);</script></h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <script language="JavaScript" type="text/javascript">
+                    //print odd number from 0 to 20
+                    for (var i = 0; i <= 20; i++) {
+                        if (i % 2 != 0) {
+                            document.write(i + "<br>");
+                        }
+                    }
+                </script>
+                <!--Add lamie.jpg with 100% width auto height-->
+                <!--Apply function goSomewhere when the button is clicked-->
+                <button type="button" class="btn btn-primary" onclick="goSomewhere()">Go somewhere</button>
+            </div>
+            </div>
+            <div class="card">
+            <div class="card-body">
+                <h5 class="card-title">Article 2</h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <a href="#" class="btn btn-primary">Go somewhere</a>
+            </div>
+            </div>
+            <div class="card">
+            <div class="card-body">
+                <h5 class="card-title">Article 3</h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <a href="#" class="btn btn-primary">Go somewhere</a>
+                <!--Forms that let the user enter a number into each and a button when clicked display the sum of the two numbers-->
+                <form>
+                    <div class="form-group">
+                    <label for="num1st">First number</label>
+                    <input type="number" class="form-control" id="num1" onkeypress="dokeypress(this)" placeholder="Enter first number">
+                    </div>
+                    <div class="form-group">
+                    <label for="num2nd">Second number</label>
+                    <input type="number" class="form-control" id="num2" onmouseover="dokeypress(this)" onmouseout="dokeyclick(this)" placeholder="Enter second number">
+                    </div>
+                    <button type="button" class="btn btn-primary" onclick="sum()">Sum</button>
+
+                </form>
+            </div>
+            </div>
+        </div>
+        </div>
+    </div>
+
+
+</body>
+</html>
